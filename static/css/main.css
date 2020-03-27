@@ -1,4 +1,4 @@
-body{font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;}
+body{font-family:"Palatino Linotype","Book Antiqua", serif;}
 
 body{margin:16px auto;max-width:677px;padding:0 10px;color:#333;line-height:1.6;}
 h1{line-height:2;font-size:160%}
@@ -9,7 +9,7 @@ footer{margin:0;padding:10px 0;border-top:1px solid #999;line-height:1;text-alig
 p,div,ul,ol{margin:10px 0}
 img{margin:10px auto;max-width:600px;padding:0 10px;height:auto;display:block}
 hr{border:none;border-top:1px dashed #999;color:#fff;background-color:#fff;height:1px}
-a{color:#00f;word-wrap:break-word}
+a{color:#00f;word-wrap:break-word;text-decoration:none}
 a:visited{color:#009}
 a:hover{color:#f00}
 header a,header a:visited,footer a,footer a:visited,h1 a,h1 a:visited,h2 a,h2 a:visited,h3 a,h3 a:visited,h4 a,h4 a:visited,h5 a,h5 a:visited,h6 a,h6 a:visited{text-decoration:none;color:#333}
