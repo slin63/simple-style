@@ -1,5 +1,13 @@
 body{font-family:"Palatino Linotype","Book Antiqua", serif;font-size:19px;}
 
+/*forms, for some reason*/
+input {
+  background-color: #fffcf5;
+}
+button {
+  background-color: #fffcf5;
+}
+
 body{margin:16px auto;max-width:677px;padding:0 10px;color:#333;line-height:1.6;}
 h1{line-height:2;font-size:160%}
 h2{line-height:1.6;font-size:120%}
