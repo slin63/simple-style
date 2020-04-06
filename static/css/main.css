@@ -22,7 +22,7 @@ hr{
     border:none;border-top:2px solid #999;color:#fff;background-color:#fff;height:1px;
     margin-top:20px;
 }
-a{color:#00f;word-wrap:break-word;text-decoration:none}
+a{color:#4040ff;word-wrap:break-word;text-decoration:none}
 a:visited{color:#009}
 a:hover{color:#f00}
 header a,header a:visited,footer a,footer a:visited,h1 a,h1 a:visited,h2 a,h2 a:visited,h3 a,h3 a:visited,h4 a,h4 a:visited,h5 a,h5 a:visited,h6 a,h6 a:visited{text-decoration:none;color:#333}
@@ -41,11 +41,8 @@ li.page-item{display:inline;padding-right:15px}
 article li{padding: 0.03em 0 0.03em 0;}
 article ul{padding: .2em .2em .2em 1.5em}
 
-/* Make the newest post look bigger */
-contents li:first-child {
-  font-size: 1.20em;
-  padding-bottom: .08em;
-  padding-top: .08em;
+/* Style newest post look bigger */
+contents li:first-child a{
 }
 
 svg.permalink{color:#666;fill:currentColor}
