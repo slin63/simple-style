@@ -1,4 +1,4 @@
-body{font-family:Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;font-size:16px;}
+body{font-family:Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;font-size:17px;}
 
 /*forms, for some reason*/
 input {
@@ -38,6 +38,12 @@ li.page-item{display:inline;padding-right:15px}
 
 article li{padding: 0.03em 0 0.03em 0;}
 article ul{padding: .2em .2em .2em 1.5em}
+/* make newest post look bigger */
+contents li:first-child {
+  font-size: 1.25em;
+  padding-bottom: .08em;
+  padding-top: .08em;
+}
 
 svg.permalink{color:#666;fill:currentColor}
 svg:hover.permalink{color:#f00;fill:currentColor}
