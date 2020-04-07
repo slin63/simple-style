@@ -1,19 +1,20 @@
 {{ define "main" -}}
-<div class="title">
-  <h1>{{ .Title }}</h1>
-  {{ with .Params.Subtitle -}}
-  <h2>{{ . }}</h2>
-  {{ end -}}
-</div>
-<div class="meta">
-  {{ if .Params.tags -}}
-  <div>
-    {{ range .Params.tags -}}
-    <span><a href="{{ "/tags/" | relURL }}{{ . | urlize }}">#{{ . }}</a></span>
+<single>
+  <div class="meta">
+    {{ if .Params.tags -}}
+      <!-- https://discourse.gohugo.io/t/howto-delimiter-separated-tags/146 -->
+      {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}<a class="tags" href="/tags/{{ $e }}">#{{ $e }}</a>{{ end }}
     {{ end -}}
   </div>
-  {{ end -}}
-</div>
+  <div class="title">
+    <h1>
+      {{ .Title }}
+    </h1>
+    {{ with .Params.Subtitle -}}
+    <h2>{{ . }}</h2>
+    {{ end -}}
+  </div>
+</single>
 <div class="content">
   {{ .Content -}}
 </div>

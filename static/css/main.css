@@ -59,6 +59,21 @@ svg:hover.permalink{color:#f00;fill:currentColor}
 .content h6{padding:0;margin:10px 0 0}
 .content p{padding:0;margin:.4em 0}
 
+/* Article headers */
+single h1{padding-top:0.1em; margin-top:0.1em;}
+single .title{padding-top:0.1em; margin-top:0.1em;}
+single .meta{padding-bottom:0; margin-bottom:0;}
+single div {padding-bottom:0; margin-bottom:0;}
+
+.meta {
+    font-size: .8em;
+    font-style: italic;
+    color: gray;
+}
+a.tags {
+    color: gray;
+}
+
 nav {
     float: right;
 }
