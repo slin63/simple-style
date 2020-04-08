@@ -1,8 +1,8 @@
 {{ define "main" -}}
 <single>
-  <div class="meta">
+  <div class="meta" style="text-align:right">
     {{ if .Date }}
-      {{ .Date.Format "01.02.2006" }}
+      [{{ .Date.Format "01.02.2006" }}]
     {{ end }}
     {{ if .Params.tags -}}
       <!-- https://discourse.gohugo.io/t/howto-delimiter-separated-tags/146 -->
