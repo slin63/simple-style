@@ -104,8 +104,8 @@ a.tags {
 }
 
 .grid-item .grid-image img {
-    max-width: 90%;
-    max-height: 100%;
+    max-width: auto;
+    max-height: 350px;
 }
 
 .exif {
@@ -113,5 +113,19 @@ a.tags {
   font-size: .8em;
   font-style: italic;
   color: gray;
+}
+
+.download-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .15em 0 .15em 0
+}
+
+.index-img {
+    height:300px;
+    width:300px;
+    object-fit:cover;
+    object-position: 50% 50%;
 }
 
