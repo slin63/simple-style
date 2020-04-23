@@ -2,7 +2,7 @@
 <div>
     {{ .Content -}}
 </div>
-<div class="grid-container">
+<div class="grid-container-index">
 
     {{ range (.Paginate ( where .Site.RegularPages "Type" "in" site.Params.mainSections )).Pages -}}
     <div class="grid-item">
