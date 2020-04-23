@@ -7,6 +7,7 @@ body{font-family:Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Geo
 }
 input {
   background-color: #fffcf5;
+  margin-top: 1em;
 }
 button {
   background-color: #fffcf5;
@@ -21,7 +22,13 @@ h3,h4,h5,h6{line-height:1.2;font-size:100%}
 header{margin:0;padding:0;border-bottom:1px solid #999;line-height:1}
 footer{margin:0;padding:10px 0;border-top:1px solid #999;line-height:1;text-align:center}
 p,div,ul,ol{margin:0px 0}
-img{margin:10px auto;max-width:95%;max-height:600px;padding:0 10px;height:auto;display:block}
+img{
+    margin:10px auto;
+    max-width:95%;
+    max-height:600px;
+    padding:0 0px;
+    height:auto;
+    display:block}
 hr{
     border:none;border-top:2px solid #999;color:#fff;background-color:#fff;height:1px;
     margin-top:20px;
@@ -83,21 +90,21 @@ a.tags {
 
 /* Grid */
 .grid-container {
-  display: inline-grid;
-  grid-template-columns: 33% 33% 33%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(23rem, 100%), 1fr));
 }
 
 .grid-item {
     max-width: 100%;
     max-height: 500px;
-    margin: 3% 0 3% 0;
+    margin: 1% 0 1% 0;
 }
 
 .grid-item .grid-image {
-    height: 350px;
+    height: 300px;
     width: auto;
 
-    margin: 5% 0 5% 0;
+    margin: 2% 0 2% 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,7 +112,7 @@ a.tags {
 
 .grid-item .grid-image img {
     max-width: auto;
-    max-height: 350px;
+    max-height: 300px;
 }
 
 .exif {
@@ -123,9 +130,14 @@ a.tags {
 }
 
 .index-img {
-    height:300px;
-    width:300px;
+    height:280px;
+    width:280px;
     object-fit:cover;
     object-position: 50% 50%;
+    margin: 10px 10px 10px 10px;
+}
+
+.index-description {
+    margin: 10px 25px 10px 25px;
 }
 

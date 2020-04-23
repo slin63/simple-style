@@ -2,49 +2,25 @@
 <div>
     {{ .Content -}}
 </div>
-<contents>
-    <div class="grid-container">
+<div class="grid-container">
 
-<!--         {{ range (.Paginate ( where .Site.RegularPages "Type" "in" site.Params.mainSections )).Pages -}}
-        <li style="list-style-type:none">{{ .Date.Format "01.02.2006" }} // <a href="{{ .RelPermalink }}">{{ .Title }}
-            {{ if .Draft  }}
-            <u><i>[DRAFT]</i></u>
-            {{ end }}
-            <img src="{{ .Description }}">
-        </a></li>
-        {{ end -}}
- -->
-        {{ range (.Paginate ( where .Site.RegularPages "Type" "in" site.Params.mainSections )).Pages -}}
-        <div class="grid-item">
-            <div class="grid-image">
-                <a href="{{ .RelPermalink }}">
-                    <img class="index-img" src="{{ .Description }}">
-                </a>
-            </div>
-            <div>
-                {{ .Title }}
-                <div class="exif">{{ .Date.Format "01.02.2006" }}</div>
-            </div>
+    {{ range (.Paginate ( where .Site.RegularPages "Type" "in" site.Params.mainSections )).Pages -}}
+    <div class="grid-item">
+        <div class="grid-image">
+            <a href="{{ .RelPermalink }}">
+                <img class="index-img" src="{{ .Description }}">
+            </a>
         </div>
-        {{ end -}}
-
-
+        <div class="index-description">
+            {{ .Title }}
+            <div class="exif">{{ .Date.Format "01.02.2006" }} // {{ .Summary }}</div>
+        </div>
     </div>
-</contents>
-
-<!-- <contents>
-        <ul>
-            {{ range (.Paginate ( where .Site.RegularPages "Type" "in" site.Params.mainSections )).Pages -}}
-            <li style="list-style-type:none">{{ .Date.Format "01.02.2006" }} // <a href="{{ .RelPermalink }}">{{ .Title }}
-                {{ if .Draft  }}
-                        <u><i>[DRAFT]</i></u>
-                {{ end }}
-                <img src="{{ .Description }}">
-        </a></li>
-            {{ end -}}
-        </ul>
-    </contents> -->
-
-    {{ template "_internal/pagination.html" . -}}
     {{ end -}}
+
+
+</div>
+
+{{ template "_internal/pagination.html" . -}}
+{{ end -}}
 
