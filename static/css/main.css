@@ -104,6 +104,9 @@ a.tags {
     max-width: 100%;
     max-height: 500px;
     margin: 1% 0 1% 0;
+
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .grid-item .grid-image {
