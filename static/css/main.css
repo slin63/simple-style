@@ -2,6 +2,7 @@ body{font-family:Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Geo
 
 /*forms, for some reason*/
 input {
+  margin-top: .5em;
   background-color: #fffcf5;
 }
 button {
