@@ -2,12 +2,18 @@
 <single>
   <div class="meta" style="text-align:right">
     {{ if .Date }}
-      [{{ .Date.Format "01.02.2006" }}]
+      [{{ .Date.Format "01.02.2006" }}] //
     {{ end }}
+    {{ $readTime :=  math.Round (div (countwords .Content) 220.0)  }}
+    {{ if gt $readTime 1 }}
+      reading time: {{ $readTime }}min //
+    {{ end }}
+
     {{ if .Params.tags -}}
       <!-- https://discourse.gohugo.io/t/howto-delimiter-separated-tags/146 -->
       {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}<a class="tags" href="/tags/{{ $e }}">#{{ $e }}</a>{{ end }}
     {{ end -}}
+
   </div>
   <div class="title">
     <h1>
